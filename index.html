@@ -141,7 +141,7 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">Lux<span>ury</span></div>
+            <div class="footer-logo"><span></span></div>
 
         </div>
 
@@ -156,51 +156,7 @@
         </svg>
     </a>
 
-    <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.add("show");
-            } else {
-                scrollTopBtn.classList.remove("show");
-            }
-        });
-
-        document.querySelectorAll('.quantity-selector').forEach(selector => {
-            const minusBtn = selector.children[0];
-            const qtyVal = selector.children[1];
-            const plusBtn = selector.children[2];
-            
-            const card = selector.closest('.product-card');
-            const priceEl = card.querySelector('.price-orange');
-            const basePrice = parseFloat(priceEl.textContent.replace('$', ''));
-
-            const updatePrice = (qty) => {
-                priceEl.textContent = '$' + (basePrice * qty).toFixed(2);
-            };
-
-            minusBtn.addEventListener('click', () => {
-                let currentVal = parseInt(qtyVal.textContent);
-                if (currentVal > 1) {
-                    qtyVal.textContent = currentVal - 1;
-                    updatePrice(currentVal - 1);
-                }
-            });
-
-            plusBtn.addEventListener('click', () => {
-                let currentVal = parseInt(qtyVal.textContent);
-                qtyVal.textContent = currentVal + 1;
-                updatePrice(currentVal + 1);
-            });
-        });
-
-
-        document.querySelectorAll('.btn-add-orange').forEach(btn => {
-            btn.addEventListener('click', () => {
-                alert('OK! Item added to your cart.');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
