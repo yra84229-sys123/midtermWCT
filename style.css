@@ -273,7 +273,7 @@ nav ul li a.active {
 }
 
 .btn-orange {
-    background-color: #f26522;
+    background-color: var(--gold)   ;
     border-color: white;
     color: white;
     display: flex;
@@ -285,7 +285,7 @@ nav ul li a.active {
 }
 
 .btn-orange:hover {
-    background-color: #d9531e;
+    background-color: var(--gold);
     border-color: white;
     color: white;
 }
@@ -359,9 +359,9 @@ nav ul li a.active {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: #f26522;
+    background: var(--gold);
     color: white;
-    border-color: #f26522;
+    border-color: var(--gold);
     box-shadow: 0 8px 15px rgba(242, 101, 34, 0.2);
     transform: translateY(-2px);
 }
@@ -440,7 +440,7 @@ nav ul li a.active {
 }
 
 .price-orange {
-    color: #f26522;
+    color: var(--gold);
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -488,7 +488,7 @@ nav ul li a.active {
 }
 
 .btn-add-orange {
-    background-color: #f26522;
+    background-color: var(--gold);
     color: white;
     border: none;
     border-radius: 4px;
@@ -504,7 +504,7 @@ nav ul li a.active {
 }
 
 .btn-add-orange:hover {
-    background-color: #d9531e;
+   background-color: var(--gold);
 }
 
 
@@ -615,7 +615,7 @@ nav ul li a.active {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #f26522;
+    border-color: var(--gold);
     box-shadow: 0 4px 12px rgba(242, 101, 34, 0.15);
     transform: translateY(-2px);
 }
@@ -627,51 +627,12 @@ nav ul li a.active {
 
 
 footer {
-    background-color: var(--primary-black);
+    background-color: var(--primary-white);
     color: white;
     padding: 4rem 5% 2rem;
     text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 3rem;
-}
-
-.footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: white;
-}
-
-.footer-logo span {
-    color: var(--gold);
-}
-
-.footer-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: #ccc;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer-links a:hover {
-    color: var(--gold);
-}
-
-.copyright {
-    color: #888;
-    font-size: 0.8rem;
-}
 
 @keyframes fadeIn {
     from {
@@ -703,13 +664,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-black);
+    background-color: var(--primary-white);
     color: white;
     text-align: center;
 }
 
 .page-header h1 {
-    color: white;
+    color: rgb(4, 4, 4);
     font-size: 3.5rem;
     letter-spacing: 2px;
     animation: fadeIn 1s ease-out;
@@ -756,35 +717,4 @@ footer {
     nav ul {
         display: none;
     }
-}
-
-.scroll-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 55px;
-    height: 55px;
-    background-color: #f26522;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.scroll-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-top:hover {
-    background-color: #d9531e;
-    transform: translateY(-5px);
-    color: white;
 }
