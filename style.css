@@ -626,11 +626,99 @@ nav ul li a.active {
 }
 
 
-footer {
-    background-color: var(--primary-white);
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    color: var(--primary-black);
+    padding: 4rem 10% 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.footer-line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--gold);
+    margin-bottom: 2rem;
+}
+
+.footer-col a {
+    display: flex;
+    align-items: center;
+    color: var(--primary-black);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.footer-col a span {
+    color: var(--gold);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.footer-col a:hover {
+    color: var(--gold);
+}
+
+.footer-col p {
+    display: flex;
+    align-items: center;
+    color: var(--primary-black);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.footer-col p svg {
+    color: var(--gold);
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    color: var(--gold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+}
+
+.social-icons a:hover {
+    background-color: var(--gold);
     color: white;
-    padding: 4rem 5% 2rem;
-    text-align: center;
 }
 
 
@@ -717,4 +805,9 @@ footer {
     nav ul {
         display: none;
     }
+    .footer-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
 }
